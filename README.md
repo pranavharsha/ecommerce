@@ -13,7 +13,7 @@ npm install
 Run the app in dev mode:
 npm start
 
-Deployed at 
+Deployed at https://pranavharsha.github.io/ecommerce/
 
 ## Choices/Assumptions
 
