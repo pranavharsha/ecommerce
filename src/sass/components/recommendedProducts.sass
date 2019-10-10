@@ -1,0 +1,101 @@
+.recommended-products-container
+  background-color: #fafafa
+  margin: rem-calc(40px) 0 rem-calc(80px)
+  padding: rem-calc(40px) rem-calc(17px) rem-calc(25px)
+  .header
+    font-size: rem-calc(24px)
+    font-weight: 500
+    font-style: normal
+    font-stretch: normal
+    line-height: normal
+    letter-spacing: normal
+    color: #4a4a4a
+    margin: 0 rem-calc(50px)
+
+  .recommended-products
+    display: flex
+    margin: rem-calc(25.7px) 0
+
+    img
+      width: 100%
+      height: 87%
+
+    .mobile-slide
+      display: none
+
+  .carousel
+    width: 100%
+    display: flex
+
+    li
+      border-right: 4px solid transparent
+
+  .carousel-button
+    width: rem-calc(18px)
+    border: none
+    background: transparent
+
+  .back
+    margin-right: rem-calc(15px)
+    padding: 0
+
+  .next
+    margin-left: rem-calc(7.4px)
+    padding: 0
+
+  .carousel-slider
+    flex-grow: 1
+  
+  .name, .price
+    margin-left: rem-calc(10px)
+    font-family: GothamHTF
+    font-size: 1rem
+    font-weight: normal
+    font-style: normal
+    font-stretch: normal
+    line-height: normal
+    letter-spacing: normal
+    color: #000000
+    padding-top: rem-calc(5px)
+
+  .price
+    font-size: rem-calc(14px)
+    color: #4a4a4a
+
+@media screen and (max-width: 980px)
+  .recommended-products-container
+    margin: rem-calc(30px) 0 rem-calc(60px)
+    padding: rem-calc(30px) rem-calc(9.2px)
+    height: fit-content
+    align-items: center
+    flex-direction: column
+    justify-content: center
+
+    .header
+      text-align: center
+    .recommended-products
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-evenly
+      margin: rem-calc(20px) 0 rem-calc(12px)
+      .carousel
+        display: none
+      .mobile-slide
+        display: block
+        margin-bottom: rem-calc(18px)
+        width: rem-calc(329px)
+        height: rem-calc(377px)
+        img
+          width: 100%
+          height: rem-calc(347px)
+
+
+@media screen and (max-width: 680px)
+  .recommended-products-container
+    .recommended-products
+      .mobile-slide
+        height: rem-calc(230px)
+        width: rem-calc(175px)
+        img
+          width: 100%
+          height: rem-calc(200px)

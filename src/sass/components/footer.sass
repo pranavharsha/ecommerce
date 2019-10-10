@@ -1,0 +1,129 @@
+.footer-container
+  background-color: #000000
+  height: fit-content
+  .features-strip-container
+    height: rem-calc(57px)
+    display: flex
+    align-items: center
+    justify-content: space-evenly
+    background-color: #fafafa
+
+    .child
+      display: flex
+      span
+        margin-left: rem-calc(10px)
+        font-size: 0.85rem
+        font-weight: bold
+        opacity: 0.5
+        padding: 1.5px
+
+  .vertical-divider
+    background-color: #e5e5e5
+    height: rem-calc(30px)
+    width: rem-calc(2px)
+
+  .page-links-container
+    display: flex
+    justify-content: space-between
+    font-size: rem-calc(12px)
+    color: #ffffff
+    margin-bottom: rem-calc(50px)
+
+    .section-mobile
+      display: none
+
+    .header
+      font-weight: bold
+      font-style: normal
+      font-stretch: normal
+      line-height: 1.5
+      letter-spacing: 1px
+      padding-bottom: 5px
+    .content
+      display: flex
+      flex-direction: column
+      // height: rem-calc(100px)
+      justify-content: space-evenly
+      .page
+        opacity: 0.7
+        font-size: 0.7rem
+        padding: 5px 0px 5px 0px
+
+    .newsletter
+      display: flex
+      flex-direction: column
+      justify-content: flex-start
+      position: relative
+      .content
+        display: flex
+        flex-direction: row
+        justify-content: flex-start
+      input
+        margin-right: rem-calc(8px)
+        background: transparent
+        border: none
+        border-bottom: solid 1px #ffffff
+        width: rem-calc(200px)
+        height: rem-calc(36px)
+      input::placeholder
+        color: #ffffff
+        opacity: 0.7
+        font-size: 0.7rem
+      button
+        width: rem-calc(87px)
+        height: rem-calc(40px)
+        border: solid 2px #ffffff
+        background: transparent
+        color: #ffffff
+        font-size: 10px
+        font-weight: bold
+    .social-media
+      padding-top: 10px
+      position: absolute
+      bottom: 0px
+      svg
+        margin-right: rem-calc(30px)
+
+  .footerOuter
+    padding: 3rem 3rem 0 3rem
+
+  .copyright
+    margin: 0.5rem 0 0 0
+    padding: 0 0 0.5rem 0
+    opacity: 0.4
+    font-size: 11px
+    font-weight: normal
+    font-style: normal
+    font-stretch: normal
+    line-height: 2
+    letter-spacing: normal
+    text-align: center
+    color: #ffffff
+  
+  .copyrightSpan
+    text-decoration: underline
+    padding: 0 5px 0 5px
+    // font-size: 13px
+
+@media screen and (max-width: 850px)
+  .footer-container
+    .page-links-container
+      flex-direction: column
+      padding: rem-calc(55px) rem-calc(39px) rem-calc(10px)
+      .sections-mobile
+        display: block
+      .section
+        display: none
+      .section-mobile
+        display: flex
+        justify-content: space-between
+      .newsletter
+        margin-bottom: rem-calc(60px)
+        .content
+          display: block
+
+@media screen and (max-width: 400px)
+  .footer-container
+    .features-strip-container
+      .payment, .one
+        display: none

@@ -1,0 +1,250 @@
+.product-detail-container
+  display: flex
+  flex-direction: row-reverse
+  justify-content: space-between
+  padding: 0 rem-calc(50px) rem-calc(15px)
+
+  // ProductImages
+  .product-images-container
+    height: fit-content
+    width: 65%
+
+  .carousel
+    width: 100%
+
+  .product-images-container
+    display: flex
+    justify-content: flex-end
+    margin-top: rem-calc(60px)
+    margin-left: 2%
+    .carousel-slider, .selected-img-container
+      width: 100%
+
+    .selected-img-container
+      height: 100%
+      img
+        width: auto
+        max-width: 98%
+
+    .carousel-bottom, .carousel-preview, .img-preview, .selected-img-container
+      display: flex
+      align-items: center
+      justify-content: center
+      .carousel-button
+        background-color: transparent
+        border: none
+
+      .img-preview
+        width: rem-calc(80px)
+        height: rem-calc(60px)
+        margin-top: rem-calc(5px)
+        margin-right: rem-calc(5px)
+        img
+          max-width: rem-calc(80px)
+          max-height: rem-calc(60px)
+          width: auto
+          height: auto
+        &:last-child
+          margin-right: 0
+
+      .img-selected
+        border: solid 4px $primary-green
+
+  // Details
+  .details-container
+    width: 32%
+  .details-gender
+    display: flex
+    align-items: center
+    margin-top: rem-calc(30px)
+    font-size: 10px
+    font-weight: normal
+    font-style: normal
+    font-stretch: normal
+    line-height: normal
+    letter-spacing: normal
+    color: #4a4a4a
+    svg
+      width: 0.25rem
+      height: 0.5rem
+      margin-right: rem-calc(7px)
+
+  .details-header
+    width: 100%
+    height: fit-content
+    display: flex
+    justify-content: space-between
+    margin: rem-calc(18px) 0 rem-calc(31px)
+    .description
+      opacity: 0.7
+    .left, .right
+      font-size: rem-calc(12px)
+      font-weight: normal
+      font-style: normal
+      font-stretch: normal
+      line-height: normal
+      letter-spacing: normal
+      color: #4a4a4a
+
+    .right
+      display: flex
+      flex-direction: column
+      align-items: flex-end
+      tspan
+        opacity: 0.7
+
+    .name
+      font-size: rem-calc(24px)
+      font-weight: 500
+      color: #000000
+
+    .price
+      flex-grow: 1
+      font-size: 1rem
+
+  .details-body
+    width: 100%
+    border: solid 1px #cccccc
+    box-sizing: border-box
+    border-bottom: none
+
+    .section-1
+      height: rem-calc(39px)
+      display: flex
+      .men, .women
+        width: 50%
+        font-size: 1rem
+        font-weight: bold
+        font-style: normal
+        font-stretch: normal
+        line-height: normal
+        letter-spacing: 1.33px
+        text-align: center
+        background-color: #ffffff
+        color: $primary-green
+        cursor: pointer
+        display: flex
+        align-items: center
+        justify-content: center
+      .women
+        background-color: #f1f1f1
+        color: #000000
+        border-bottom: solid 1px #cccccc
+        border-left: solid 1px #cccccc
+
+    .select-color
+      margin: rem-calc(35px) rem-calc(13px) rem-calc(34px)
+      span
+        font-size: 10px
+        font-weight: normal
+        font-style: normal
+        font-stretch: normal
+        line-height: normal
+        letter-spacing: 0.5px
+        color: #4a4a4a
+      .colors
+        display: flex
+        flex-wrap: wrap
+        margin-top: rem-calc(13px)
+      .color-, .color-selected
+        border-radius: 50%
+        position: relative
+        height: rem-calc(30px)
+        width: rem-calc(30px)
+      .color-selected
+        border: solid $primary-green 4px
+        margin-top: rem-calc(-4px)
+      .color
+        width: rem-calc(21px)
+        height: rem-calc(21px)
+        border-radius: 50%
+        border: solid 0.9px #cccccc
+        position: absolute
+
+    .select-size
+      margin: 0 rem-calc(13px)
+      .header
+        display: flex
+        justify-content: space-between
+        margin-bottom: rem-calc(13px)
+      span
+        font-size: 10px
+        font-weight: normal
+        font-style: normal
+        font-stretch: normal
+        line-height: normal
+        letter-spacing: 0.5px
+        color: #4a4a4a
+      .sizes
+        display: flex
+        flex-wrap: wrap
+      .size-, .size
+        box-sizing: border-box
+        width: rem-calc(30px)
+        height: rem-calc(30px)
+        margin: 0 0.5rem 0.5rem 0
+        font-size: 0.78rem
+        font-weight: bold
+      .size
+        display: flex
+        align-items: center
+        justify-content: center
+
+    .filler
+      height: rem-calc(35px)
+
+  .add-bag, .world-shipping
+    width: 100%
+    height: rem-calc(60px)
+    background-color: $primary-green
+    font-size: 1rem
+    font-weight: bold
+    font-style: normal
+    font-stretch: normal
+    line-height: normal
+    letter-spacing: 2px
+    text-align: center
+    color: #ffffff
+    cursor: pointer
+    border: none
+
+  .world-shipping
+    height: fit-content
+    background-color: transparent
+    font-size: rem-calc(12px)
+    font-weight: normal
+    letter-spacing: normal
+    color: #4a4a4a
+    margin-top: rem-calc(20px)
+    opacity: 0.7
+
+@media screen and (max-width: 980px)
+  .product-detail-container
+    flex-direction: column
+    align-items: center
+    height: fit-content
+    .product-images-container
+      width: 100%
+      margin: rem-calc(18px) 0 rem-calc(20px)
+    .details-container
+      // min-width: rem-calc(333px)
+      // max-width: rem-calc(440px)
+      width: auto
+      .details-gender
+        display: none
+      .details-header
+        margin-top: 0
+        margin-bottom: rem-calc(20px)
+      .select-color
+        margin: rem-calc(25px) rem-calc(13px) rem-calc(20px)
+        .colors
+          margin-top: rem-calc(2px)
+        .color-
+          margin: rem-calc(10px) 1rem rem-calc(5px) 0
+        .color-selected
+          margin: rem-calc(6px) 12px rem-calc(1px) 0
+      .select-size
+        .size
+          margin: rem-calc(4.5px) 14px rem-calc(4.5px) 0
+        .filler
+          height: rem-calc(21.5px)
