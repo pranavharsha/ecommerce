@@ -2,6 +2,7 @@
   "name": "ecommerce-site",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://pranavharsha.github.io/ecommerce",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
