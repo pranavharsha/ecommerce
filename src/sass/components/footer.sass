@@ -39,6 +39,7 @@
       line-height: 1.5
       letter-spacing: 1px
       padding-bottom: 5px
+      text-transform: uppercase
     .content
       display: flex
       flex-direction: column
@@ -99,7 +100,7 @@
     letter-spacing: normal
     text-align: center
     color: #ffffff
-  
+
   .copyrightSpan
     text-decoration: underline
     padding: 0 5px 0 5px
@@ -107,9 +108,14 @@
 
 @media screen and (max-width: 850px)
   .footer-container
+    .copyrightSpan
+      &:first-child
+        &::before
+          content: "\A"
+          white-space: pre
     .page-links-container
       flex-direction: column
-      padding: rem-calc(55px) rem-calc(39px) rem-calc(10px)
+      // padding: rem-calc(55px) rem-calc(39px) rem-calc(10px)
       .sections-mobile
         display: block
       .section
@@ -117,8 +123,22 @@
       .section-mobile
         display: flex
         justify-content: space-between
+        .page
+          opacity: 0.7
+          font-size: 0.8rem
+        div
+          &:nth-child(2)
+            padding: 2px 0px 0px 0px
+
       .newsletter
-        margin-bottom: rem-calc(60px)
+        margin-bottom: rem-calc(40px)
+        .social-media
+          position: relative
+          padding-top: rem-calc(20px)
+        input
+          width: rem-calc(160px)
+        button
+          float: right
         .content
           display: block
 

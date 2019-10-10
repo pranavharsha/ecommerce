@@ -1,5 +1,4 @@
 .header-container
-  height: rem-calc(125px)
   .top
     background-color: #000000
     color: #dedede
@@ -10,7 +9,7 @@
     font-stretch: normal
     line-height: 1.25
     letter-spacing: 2px
-  
+
   .nav-bar
     height: rem-calc(90px)
     background-color: #ffffff
@@ -29,8 +28,13 @@
       letter-spacing: 2px
       color: #000000
       text-transform: uppercase
-      span
-        cursor: pointer
+      .navUl
+        list-style-type: none
+        padding-left: 0px
+        .navItem
+          white-space: nowrap
+          float: left
+          margin-right: 10px
     .header-left
       svg
         display: none
@@ -58,19 +62,19 @@
         border: solid 4px $primary-green
         float: right
         right: 0
-    
+
     .icons
       display: flex
       width: rem-calc(72px)
       justify-content: space-between
 
-    
-    
 @media screen and (max-width: 400px)
   .header-container
     .nav-bar
       .header-left, .header-right
         span
+          display: none
+        nav
           display: none
         svg
           display: inline-block

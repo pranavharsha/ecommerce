@@ -10,8 +10,12 @@ const Header = () => (
     <div className="nav-bar">
       <div className="header-left">
         <BurgerMenu />
-        <span style={{ marginRight: '40px' }}>Men</span>
-        <span>Women</span>
+        <nav>
+          <ul className="navUl">
+            <li className="navItem">Men</li>
+            <li className="navItem">Women</li>
+          </ul>
+        </nav>
       </div>
       <div className="logo-wrapper">
         <div className="logo">
@@ -27,6 +31,7 @@ const Header = () => (
         </div>
       </div>
     </div>
+
   </div>
 );
 

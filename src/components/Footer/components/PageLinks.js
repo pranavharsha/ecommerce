@@ -26,6 +26,7 @@ const PageLinks = () => {
   return (
     <div className="page-links-container">
       {sections}
+
       <div className="newsletter">
         <div className="header">NEWSLETTER</div>
         <div className="content">
@@ -34,12 +35,13 @@ const PageLinks = () => {
         </div>
         <div className="social-media"><Instagram /> <Facebook /></div>
       </div>
+
       <div className="section-mobile">
         <div>
           <div className="header">SHOP</div>
           <div style={{ margin: '5px 0 40px', height: '50px', display: 'flex', flexDirection: 'column' }}>
-            <div style={{ flexGrow: 1 }}>CATIBA</div>
-            <div>OCA</div>
+            <div className="page">CATIBA</div>
+            <div className="page" style={{ marginTop: '12px' }}>OCA</div>
           </div>
           <div className="header">Support</div>
           <div style={{ margin: '5px 0 40px', height: '60px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
@@ -50,7 +52,7 @@ const PageLinks = () => {
         </div>
         <div>
           <div style={{ marginBottom: '40px' }}>ABOUT</div>
-          <div style={{ marginBottom: '40px' }}>BLOG</div>
+          <div style={{ marginBottom: '47px' }}>BLOG</div>
           <div >POP UP STORES</div>
         </div>
       </div>
